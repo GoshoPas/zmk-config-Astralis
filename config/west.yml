@@ -10,5 +10,4 @@ manifest:
       revision: main
       import: app/west.yml
   self:
-    path: config\boards\shields\AstralisLeft
-    path: config\boards\shields\AstralisRight
+    path: config

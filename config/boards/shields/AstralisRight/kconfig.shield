@@ -1,2 +1,2 @@
-config SHIELD_ASTRALISRIGHT
-    def_bool $(shields_list_contains, AstralisRight)
+config SHIELD_ASTRALISR
+    def_bool $(shields_list_contains, AstralisR)

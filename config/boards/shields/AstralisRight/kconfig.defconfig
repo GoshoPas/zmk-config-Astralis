@@ -1,6 +1,6 @@
-if SHIELD_ASTRALISRIGHT
+if SHIELD_ASTRALISR
 
 config ZMK_KEYBOARD_NAME
-    default "Astralis"
+    default "AstralisR"
 
 endif

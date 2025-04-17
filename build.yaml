@@ -20,6 +20,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: AstralisLeft
+    shield: AstralisL
   - board: nice_nano_v2
-    shield: AstralisRight
+    shield: AstralisR

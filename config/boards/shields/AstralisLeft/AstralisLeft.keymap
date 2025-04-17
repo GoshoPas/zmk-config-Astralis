@@ -1,0 +1,45 @@
+ #include <behaviors.dtsi>
+ #include <dt-bindings/zmk/keys.h>
+ #include <dt-bindings/zmk/bt.h>
+
+ / {
+       keymap {
+              compatible = "zmk,keymap";
+
+              default_layer {
+ // ---------------------------------------------------------------------------------------------------------------------------------
+ // |  ESC   |   F1    |   F2    |   F3    |   F4    |   F5    |   F6    |       
+ // | GRAVE  |    1    |    2    |    3    |    4    |    5    |    6    |                                        
+ // |  TAB   |    Q    |    W    |    E    |    R    |    T    |    Y    |                             
+ // |  CTRL  |    A    |    S    |    D    |    F    |    G    |    H    |    J   |                                
+ // |      SHIFT       |    Z    |    X    |    C    |    V    |    B    |    N   |                   
+ // |  CTRL  |   WIN   |   ALT   |    FN   |  ADJUST |   DEL   |       SPACE      |                   
+                     bindings = <
+       &kp ESC    &kp F1  &kp F2   &kp F3   &kp F4    &kp F5    &kp F6              
+       &kp GRAVE  &kp N1  &kp N2   &kp N3   &kp N4    &kp N5    &kp N6                    
+       &kp TAB    &kp Q   &kp W    &kp E    &kp R     &kp T     &kp Y                         
+       &kp CAPS   &kp A   &kp S    &kp D    &kp F     &kp G     &kp H     &kp J                            
+       &kp LSHFT          &kp Z    &kp X    &kp C     &kp V     &kp B     &kp N        
+       &mo LCTRL  &kp LWIN &kp LALT &kp LGUI &mo ADJUST &kp DEL &kp SPACE      
+                     >;
+              };
+  
+ //             adjust_layer {
+ // ---------------------------------------------------------------------------------------------------------------------------------
+ // |          |          |          |          |          |          |          |
+ // |    ~     |    !     |    @     |    #     |    $     |    %     |    ^     |    
+ // |  BT CLR  | BT SEL0  | BT SEL1  | BT SEL2  | BGT SEL3 | BT SEL4  |          |                               
+ // |  BT NXT  | OUT TOG  | OUT USB  | OUT BLE  |          |          |          |                                
+ // |  BT PRV  |          |          |          |          |          |          |                        
+ // |          |          |          |          |          |          |          |         
+ //                    bindings = <
+       &trans     &trans       &trans       &trans       &trans       &trans       &trans       
+       &kp TILDE  &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp CARET                        
+       &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans                       
+       &bt BT_NXT &out OUT_TOG &out OUT_USB &out OUT_BLE &trans       &trans       &trans     &trans                   
+       &bt BT_PRV              &trans       &trans       &trans       &trans       &trans     &trans   
+       &trans     &trans       &trans       &trans       &trans       &trans       &trans        
+                     >;
+              };
+       };
+};
